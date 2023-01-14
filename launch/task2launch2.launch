@@ -1,0 +1,16 @@
+<launch>
+
+	
+
+	<rosparam file="$(find beginner_tutorials)/config/task2.yaml" command="load" />
+	
+	
+	<node pkg="stage_ros" name="stageros" type="stageros" args = "$(find beginner_tutorials)/world/worldfile.world" output = "screen" />
+	
+	<node pkg="beginner_tutorials" name="move0"  type="projecttask2.py" args= "0"/>
+	
+	<node pkg="beginner_tutorials" name="move1"  type="projecttask2.py" args= "1"/>
+	
+		
+		
+</launch>

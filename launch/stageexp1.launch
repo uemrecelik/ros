@@ -1,0 +1,15 @@
+<launch>
+
+	<node pkg="stage_ros" name="stageros" type="stageros" args = "$(find beginner_tutorials)/world/worldfile.world" output = "screen" />
+
+	<!-- <node pkg="rosservice" type="rosservice" name="turtle2" args="call /spawn 5 6 0.2 turtle2"/>-->
+		
+	<node pkg="beginner_tutorials" name="move0"  type="move-stage.py" args= "0"/>
+	<node pkg="beginner_tutorials" name="move1"  type="move-stage.py" args= "1"/>
+
+
+	<!-- <node pkg = "beginner_tutorials" name = "move2" type = "rotate2.py" />-->
+
+
+
+</launch>

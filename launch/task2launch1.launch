@@ -1,0 +1,20 @@
+<launch>
+
+	
+	
+	<param name="goalX_r1" value="2.0"/>
+	<param name="goalY_r1" value="3.0"/>	
+	<param name="goalX_r2" value="4.0"/>
+	<param name="goalY_r2" value="5.0"/>
+	
+	
+	
+	<node pkg="stage_ros" name="stageros" type="stageros" args = "$(find beginner_tutorials)/world/worldfile.world" output = "screen" />
+	
+	<node pkg="beginner_tutorials" name="move0"  type="projecttask2.py" args= "0"/>
+	
+	<node pkg="beginner_tutorials" name="move1"  type="projecttask2.py" args= "1"/>
+	
+		
+		
+</launch>

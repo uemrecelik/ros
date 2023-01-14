@@ -1,0 +1,14 @@
+rosdistro: 'noetic
+
+  '
+roslaunch:
+  uris:
+    host_emreubuntu__46849: http://emreubuntu:46849/
+rosversion: '1.15.14
+
+  '
+run_id: c8800aa2-b95d-11ec-8f2a-17dba42a9e32
+turtlesim:
+b: 255
+g: 86
+r: 150
